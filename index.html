@@ -1,8 +1,59 @@
 <html>
 	<head>
 		<title>Dragon Breeder</title>
+		<link rel="stylesheet" type="text/css" href="interface.css"/>
 	</head>
 	<body>
-		Welcome to the world of dragons!
+		<div id="loader">
+			<h3>Loading...</h3>
+		</div>
+		<div id="game" style="display:none;">
+			<div id="topBar">
+				Welcome to the world of dragons!
+				<br/>
+				I am <b>Draco</b>, you're guide into the world of Breeding Dragons.
+			</div>
+			<div id="resources">
+				<div id="resourcesTitle">
+					Resources
+				</div>
+				<br/>
+				You have <span id="gold" style="font-weight:bold;"></span> Gold.
+				<br/>
+				You have <span id="sticks" style="font-weight:bold"></span> sticks.
+				<br/>
+				You have <span id="wood" style="font-weight:bold"></span> wood planks.
+				<br/><br/>
+				<button id="collectSticks" onClick="collectSticks()">Collect Sticks</button>
+				<br/><br/>
+				<button id="convertSticks" onClick="convertSticks()">Build wood planks</button>
+			</div>
+			<div id="tools">
+				<div id="toolsTitle">
+					Tools
+				</div>
+				<br/>
+				You have <span id="woodenAxes"></span> Wooden Axes.
+				<br/><br/>
+				<button id="buildWoodenAxe" onClick="buildAxe('wood')">Build Wooden Axe</button>
+				<br/><br/>
+				<button id="sellWoodenAxe" onClick="sellAxe('wood')">Sell Wooden Axe</button>
+			</div>
+			<div id="goods">
+				<div id="goodsTitle">
+					Goods
+				</div>
+				<br/>
+				You have <span id="berries"></span> Berries.
+				<br/>
+				<button id="sellBerries" onClick="sellGoods('berries')">Sell Berries</button>
+				<br/><br/>
+				You have <span id="truffles"></span> Truffles.
+				<button id="sellTruffles" onClick="sellGoods('truffles')">Sell Truffles</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="variables.js"></script>
+		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,56 @@
+#topBar{
+	position:relative;
+	left:230px;
+	width:500px;
+	height:50px;
+	text-align:center;
+	border-style:solid;
+	border-width:1px;
+	padding:10px;
+	overflow-y: scroll;
+}
+
+#resources{
+	position: relative;
+	top:10px;
+	width:200px;
+	border-style:solid;
+	border-width:1px;
+	padding:10px;
+}
+
+#resourcesTitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:18;
+}
+
+#tools{
+	position: relative;
+	top:20px;
+	width:200px;
+	border-style:solid;
+	border-width:1px;
+	padding:10px;
+}
+
+#toolsTitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:18;
+}
+
+#goods{
+	position: relative;
+	top:30px;
+	width:200px;
+	border-style:solid;
+	border-width:1px;
+	padding:10px;
+}
+
+#goodsTitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:18;
+}
